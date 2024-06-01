@@ -4,8 +4,8 @@ const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 
 const config = {
-  birthdate: 'Jan 29, 2020',
-  name: 'Darlene'
+  birthdate: 'Jun 2, 2024',
+  name: 'Maruchan'
 };
 
 function hideEverything() {
@@ -48,7 +48,7 @@ x = setInterval(function() {
     hw = w / 2, // half-width
     hh = h / 2,
     opts = {
-      strings: ['HAPPY', 'BIRTHDAY!', config.name],
+      strings: ['Feliz', 'Cumpleaños!', config.name],
       charSize: 30,
       charSpacing: 35,
       lineHeight: 40,
@@ -59,15 +59,15 @@ x = setInterval(function() {
       fireworkPrevPoints: 10,
       fireworkBaseLineWidth: 5,
       fireworkAddedLineWidth: 8,
-      fireworkSpawnTime: 200,
-      fireworkBaseReachTime: 30,
-      fireworkAddedReachTime: 30,
+      fireworkSpawnTime: 400,
+      fireworkBaseReachTime: 60,
+      fireworkAddedReachTime: 60,
       fireworkCircleBaseSize: 20,
       fireworkCircleAddedSize: 10,
-      fireworkCircleBaseTime: 30,
-      fireworkCircleAddedTime: 30,
-      fireworkCircleFadeBaseTime: 10,
-      fireworkCircleFadeAddedTime: 5,
+      fireworkCircleBaseTime: 60,
+      fireworkCircleAddedTime: 60,
+      fireworkCircleFadeBaseTime: 20,
+      fireworkCircleFadeAddedTime: 10,
       fireworkBaseShards: 5,
       fireworkAddedShards: 5,
       fireworkShardPrevPoints: 3,
@@ -77,10 +77,10 @@ x = setInterval(function() {
       fireworkShardAddedSize: 3,
       gravity: 0.1,
       upFlow: -0.1,
-      letterContemplatingWaitTime: 360,
-      balloonSpawnTime: 20,
-      balloonBaseInflateTime: 10,
-      balloonAddedInflateTime: 10,
+      letterContemplatingWaitTime: 720,
+      balloonSpawnTime: 60,
+      balloonBaseInflateTime: 30,
+      balloonAddedInflateTime: 30,
       balloonBaseSize: 20,
       balloonAddedSize: 20,
       balloonBaseVel: 0.4,
@@ -459,7 +459,7 @@ x = setInterval(function() {
     let merrywrap = document.getElementById('merrywrap');
     let box = merrywrap.getElementsByClassName('giftbox')[0];
     let step = 1;
-    let stepMinutes = [2000, 2000, 1000, 1000];
+    let stepMinutes = [2000, 2000, 2000, 2000];
 
     function init() {
       box.addEventListener('click', openBox, false);
